@@ -34,6 +34,9 @@ conda activate giscore
 
 conda install -y -c conda-forge geopandas matplotlib qgis osmnx
 
+conda install -y -c conda-forge geopandas matplotlib qgis osmnx datashader fiona
+
+
 conda install -y -c anaconda ipykernel
 
 
