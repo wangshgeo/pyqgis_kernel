@@ -16,8 +16,11 @@ sudo systemctl start docker
 sudo systemctl enable docker
 
 
+#0.1
 sudo docker build -f Dockerfile_gis .
 
+
+sudo docker tag dd446e0d67c5 shaohuauiuc/cybergis:0.1
 
 
 2) install libary
