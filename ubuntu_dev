@@ -1,4 +1,6 @@
 
+1) docker install
+
 sudo apt install python3.7
 
 #install docker 
@@ -14,11 +16,26 @@ sudo systemctl start docker
 sudo systemctl enable docker
 
 
+sudo docker build -f Dockerfile_gis .
+
+
+
+2) install libary
+
 #conda install 
+
+conda create -y --name giscore
+
+#activate giscore
+
+conda activate giscore
+
+#install ipykernel
 
 conda install -y -c conda-forge geopandas matplotlib qgis osmnx
 
+conda install -y -c anaconda ipykernel
 
 
 
-sudo docker build -f Dockerfile_gis .
+
