@@ -22,6 +22,11 @@ sudo docker build -f Dockerfile_gis .
 
 sudo docker tag dd446e0d67c5 shaohuauiuc/cybergis:0.1
 
+sudo docker login
+
+sudo docker push shaohuauiuc/cybergis:0.1
+
+sudo docker pull shaohuauiuc/cybergis:0.1
 
 2) install libary
 
