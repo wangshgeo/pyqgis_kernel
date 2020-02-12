@@ -38,4 +38,12 @@ sys.path.append('/opt/conda/envs/qgis_stable/bin')
 
 #Testing qgis
 
+
+#for ubuntu sys
+sys.path.append('/home/cybergis/anaconda3/envs/giscore/share/qgis/python/plugins')
+sys.path.append('/home/cybergis/anaconda3/envs/giscore/share/qgis/python')
+
+
+
+
 import qgis.core
