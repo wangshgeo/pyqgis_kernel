@@ -28,6 +28,30 @@ sudo docker push shaohuauiuc/cybergis:0.1
 
 sudo docker pull shaohuauiuc/cybergis:0.1
 
+#show the docker images
+
+sudo docker images
+
+
+#start a docker image with docker image id
+sudo docker container run c6e231addbe4
+
+# find a container id 
+sudo docker ps
+
+#CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS               NAMES
+#25b896935e6b        c6e231addbe4        "tini -g -- start-no…"   About a minute ago   Up About a minute   8888/tcp            gallant_ritchie
+
+
+# run a docker images as bash environment
+sudo docker exec -u 0 -it 25b896935e6b bash
+
+
+
+
+
+
+
 2) install libary
 
 #conda install 
