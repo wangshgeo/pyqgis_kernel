@@ -20,6 +20,16 @@ ERROR: for swarm_proxy_1  Cannot start service proxy: network swarm_jupyterhub-n
 Running pre-create checks...
 Error with pre-create check: "VBoxManage not found. Make sure VirtualBox is installed and VBoxManage is in the path"
 
+solution:
+Execute on terminal.
+1- Find VBoxManage path with the command:
+which VBoxManage
+2- Create a temporary enviroment variable:
+export VBoxManage=/usr/bin/VBoxManage
+Now you can use docker-machine command....
+
+Ps.: If you close or change terminal you will need to execute again the command:
+export VBoxManage=/usr/bin/VBoxManage
 
 https://github.com/jupyterhub/dockerspawner
 
