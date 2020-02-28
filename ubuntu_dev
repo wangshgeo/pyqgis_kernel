@@ -1,6 +1,21 @@
 
 0) docker swarm
 
+WARNING: The Docker Engine you're using is running in swarm mode.
+
+Compose does not use swarm mode to deploy services to multiple nodes in a swarm. All containers will be scheduled on the current node.
+
+To deploy your application across the swarm, use `docker stack deploy`.
+
+Removing swarm_hub_1
+Starting swarm_proxy_1              ... error
+Recreating c9c2f98f0658_swarm_hub_1 ... 
+
+ERROR: for swarm_proxy_1  Cannot start service proxy: network swarm_jupyterhub-net not found
+^CGracefully stopping... (press Ctrl+C again to force)
+
+
+
 (base) cybergis@cybergis-OptiPlex-9010:~/Desktop/dockerbuild/dockerspawner-master/examples/swarm$ docker-machine create --driver virtualbox swarm-master
 Running pre-create checks...
 Error with pre-create check: "VBoxManage not found. Make sure VirtualBox is installed and VBoxManage is in the path"
