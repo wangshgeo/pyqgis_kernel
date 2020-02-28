@@ -1,4 +1,18 @@
 
+0) docker swarm
+
+
+https://github.com/jupyterhub/dockerspawner
+
+
+Install dockerspawner to the system:
+
+pip install dockerspawner
+
+sudo apt install virtualbox
+
+
+
 1) docker install
 
 sudo apt install python3.7
