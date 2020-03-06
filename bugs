@@ -10,3 +10,4 @@ Cannot import name 'CRS' from 'pyproj' for using the osmnx library
 conda uninstall osmnx
 pip install osmnx==0.11
 
+shaohuauiuc/cybergis:0.2.5
