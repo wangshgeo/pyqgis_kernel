@@ -7,6 +7,8 @@ RUN /opt/conda/envs/hydro-py3/bin/python -m pip install --quiet git+https://gith
 
 Cannot import name 'CRS' from 'pyproj' for using the osmnx library
 
+28e09a77da5233e9e9d39bfb155f479b38f57f8e
+
 conda uninstall osmnx
 pip install osmnx==0.11
 
