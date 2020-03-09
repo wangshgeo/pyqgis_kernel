@@ -3,6 +3,13 @@ RUN /opt/conda/envs/hydro-py3/bin/python -m pip install --quiet git+https://gith
 
 
 
+RUN /opt/conda/envs/hydro-py3/bin/python -m pip install --quiet git+https://github.com/cybergis/Jupyter-xsede.git@1cb26007ff303b028dcaf33edf8a5821cae618c3
+RUN /opt/conda/envs/hydro-py3/bin/python -m pip install --quiet git+https://github.com/UW-Hydro/pysumma.git@28e09a77da5233e9e9d39bfb155f479b38f57f8e
+
+
+
+
+
  the same issue and turned out that it did not like the latest release of osmnx (0.11.3). It could be that that version is unstable as its new (9th January 2020).
 
 Cannot import name 'CRS' from 'pyproj' for using the osmnx library
