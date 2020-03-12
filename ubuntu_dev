@@ -1,4 +1,7 @@
 
+ImportError: cannot import name 'CRS' from 'pyproj' (/opt/conda/lib/python3.7/site-packages/pyproj/__init__.py)
+
+
 0) docker swarm
 
 WARNING: The Docker Engine you're using is running in swarm mode.
