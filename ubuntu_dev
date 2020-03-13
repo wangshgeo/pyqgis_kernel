@@ -1,4 +1,19 @@
 
+
+https://digital-geography.com/osm-postgis-and-docker-an-approach-for-automatic-processing/
+
+
+https://github.com/michaelmgis/osmdata.xyz/blob/master/docker/Dockerfile
+
+https://medium.com/better-programming/connect-from-local-machine-to-postgresql-docker-container-f785f00461a7
+
+http://andrewgaidus.com/Build_Query_Spatial_Database/
+
+https://nextjournal.com/mapmeld/postgis-sample
+
+https://hackernoon.com/dont-install-postgres-docker-pull-postgres-bee20e200198
+
+
 ImportError: cannot import name 'CRS' from 'pyproj' (/opt/conda/lib/python3.7/site-packages/pyproj/__init__.py)
 
 #import postgis
