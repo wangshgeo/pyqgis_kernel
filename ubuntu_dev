@@ -1,6 +1,10 @@
 
 ImportError: cannot import name 'CRS' from 'pyproj' (/opt/conda/lib/python3.7/site-packages/pyproj/__init__.py)
 
+conda install -y -c anaconda openjdk=8.0.152
+pip install hdfs3==0.3.1
+pip install mip==1.7.2
+pip install mrjob==0.7.1
 
 0) docker swarm
 
