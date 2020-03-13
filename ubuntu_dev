@@ -6,6 +6,8 @@ pip install hdfs3==0.3.1
 pip install mip==1.7.2
 pip install mrjob==0.7.1
 
+df -h /home/
+
 0) docker swarm
 
 WARNING: The Docker Engine you're using is running in swarm mode.
