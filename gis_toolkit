@@ -1,4 +1,60 @@
 
+from qgis.core import *
+# qgs path set
+QgsApplication.setPrefixPath(r'/opt/conda/envs/qgis3/', True)
+#QgsApplication.setPrefixPath("/opt/conda/envs/qgis3/share/", True)
+# Not using GUI with false
+#qgs = QgsApplication([], False)
+#qgis init
+#qgs.initQgis()
+import processing
+from processing.core.Processing import Processing
+Processing.initialize()
+QgsApplication.processingRegistry().addProvider(QgsNativeAlgorithms())
+
+print (len(QgsApplication.processingRegistry().algorithms()))
+#
+
+
+for alg in QgsApplication.processingRegistry().algorithms():
+       print(alg.id(), "--->", alg.displayName())
+       
+  
+  
+  qgisTerm = "native"
+grassTerm = "grass"
+gdalTerm = "gdal"
+cntqgis  = 0
+cntgrass = 0
+cntgdal  = 0
+for alg in QgsApplication.processingRegistry().algorithms():
+    if qgisTerm in alg.id():
+        cntqgis = cntqgis+1
+        continue
+        #print(cnt, alg.id(), "--->", alg.displayName())
+    if grassTerm in alg.id():
+        cntgrass = cntgrass+1
+        continue
+    if gdalTerm in alg.id():
+        cntgdal = cntgdal+1
+        continue
+
+print ("The size of QGIS Algorithms is",cntqgis)
+print ("The size of GRASS7 Algorithms is",cntgrass)
+print ("The size of GDAL Algorithms is",cntgdal)
+       
+
+searchTerm = "shortestpath"
+cnt = 0
+for alg in QgsApplication.processingRegistry().algorithms():
+    if searchTerm in alg.id():
+        cnt = cnt+1
+        print(cnt, alg.id(), "--->", alg.displayName())
+        
+       
+       
+
+
 https://medium.com/@cantzakas/bring-native-psql-magic-into-jupyter-notebook-50b663d856b5
 
 https://benit.github.io/blog/2017/09/28/postgresql-survival-sheet/
