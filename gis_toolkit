@@ -1,0 +1,9 @@
+
+
+
+conda create -n postgres-env postgresql postgis
+
+conda activate postgres-env
+
+conda install osmnx geopands qgis 
+
