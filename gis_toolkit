@@ -1,4 +1,10 @@
 
+https://medium.com/@cantzakas/bring-native-psql-magic-into-jupyter-notebook-50b663d856b5
+
+https://benit.github.io/blog/2017/09/28/postgresql-survival-sheet/
+
+
+https://docs.pgrouting.org/latest/en/pgRouting-installation.html
 
 
 conda create -n postgres_env python=3.7 postgresql postgis osmnx  qgis
