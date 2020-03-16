@@ -1,23 +1,11 @@
 
-from qgis.core import *
-# qgs path set
-QgsApplication.setPrefixPath(r'/opt/conda/envs/qgis3/', True)
-#QgsApplication.setPrefixPath("/opt/conda/envs/qgis3/share/", True)
-# Not using GUI with false
-#qgs = QgsApplication([], False)
-#qgis init
-#qgs.initQgis()
-import processing
-from processing.core.Processing import Processing
-Processing.initialize()
-QgsApplication.processingRegistry().addProvider(QgsNativeAlgorithms())
-
-print (len(QgsApplication.processingRegistry().algorithms()))
-#
-
-
+searchTerm = "buffer"
 for alg in QgsApplication.processingRegistry().algorithms():
-       print(alg.id(), "--->", alg.displayName())
+    if searchTerm in alg.id():
+        print(alg.id(), "--->", alg.displayName())
+
+processing.algorithmHelp("native:buffer")
+
        
   
   
