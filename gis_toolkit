@@ -1,9 +1,9 @@
 
 
 
-conda create -n postgres-env postgresql postgis
+conda create -n postgres_env python=3.7 postgresql postgis osmnx  qgis
 
-conda activate postgres-env
+conda activate postgres_env
 
-conda install osmnx geopands qgis 
+conda install geopands datashader rtree shapeply numpy matplotlib
 
